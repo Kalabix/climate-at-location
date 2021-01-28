@@ -24,8 +24,8 @@ public class ClimateService {
 	/**
 	 * Returns the climate based on the location provided.
 	 * 
-	 * @param location
-	 * @return ClimateDto
+	 * @param location 		The location a weather report is requested for.
+	 * @return ClimateDto   The climate data for a location
 	 * @throws WeatherAPIRequestException
 	 * @throws JerseyClientBuildException
 	 */

@@ -12,7 +12,7 @@ import common.dtos.ClimateDto;
 import common.exceptions.JerseyClientBuildException;
 
 /**
- * A resource for checking weather reports
+ * A resource for checking climate reports
  *
  */
 @Path("/climate")
@@ -21,8 +21,8 @@ public class ClimateRest {
 	 * Gets climate data for a specific location
 	 * /climate-at-location/climate/{location}
 	 * 
-	 * @param location
-	 * @return ClimateDto
+	 * @param  location 		The location a weather report is requested for.
+	 * @return ClimateDto		The climate data for a location
 	 * @throws Exception
 	 * @throws JerseyClientBuildException
 	 */

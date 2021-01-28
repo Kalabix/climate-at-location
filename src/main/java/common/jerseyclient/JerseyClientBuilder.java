@@ -37,9 +37,9 @@ public class JerseyClientBuilder implements BuilderInterface<Invocation.Builder>
 	}
 
 	/**
-	 * Defines the location of the resource.
+	 * Defines the resource target.
 	 * 
-	 * @param target - location of web resource.
+	 * @param target - location of web resource eg http://weatherapi.com .
 	 * @return JerseyClientBuilder
 	 * @throws JerseyClientBuildException
 	 */
@@ -54,7 +54,7 @@ public class JerseyClientBuilder implements BuilderInterface<Invocation.Builder>
 	/**
 	 * Defines the path to the resource.
 	 * 
-	 * @param path
+	 * @param path 		The path to a particular resource
 	 * @return JerseyClientBuilder
 	 * @throws JerseyClientBuildException
 	 */
@@ -69,7 +69,7 @@ public class JerseyClientBuilder implements BuilderInterface<Invocation.Builder>
 	/**
 	 * Defines the type of data returned eg json, text ect.
 	 * 
-	 * @param mediaType
+	 * @param mediaType	The type of the data the endpoint will return
 	 * @return
 	 * @throws JerseyClientBuildException
 	 */
@@ -84,8 +84,8 @@ public class JerseyClientBuilder implements BuilderInterface<Invocation.Builder>
 	/**
 	 * Defines the location the user wants the weather report for.
 	 * 
-	 * @param mediaType
-	 * @return
+	 * @param location 	 The  query parameter of the location
+	 * @return JerseyClientBuilder
 	 * @throws JerseyClientBuildException
 	 */
 	public JerseyClientBuilder setLocationParameter(String location) throws JerseyClientBuildException {
